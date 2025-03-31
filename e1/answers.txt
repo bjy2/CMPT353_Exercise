@@ -1,0 +1,7 @@
+1. Panda is easier to work with, because compared to numpy, panda has more built-in function for data analysis, such as groupby and aggregate,
+    don't need to manually write out many loop to achieve the same result.
+    Panda is easier to read as well since many functions are really intuitive and easy to understand, make the whole chunk of code much shorter and easier to read.
+    Meanwhile numpy require lot more work to understand.
+2. pivot_months_pandas() costs: 5 ms ± 33.4 μs per loop;  pivot_months_loops() costs: 99.1 ms ± 536 μs per loop
+    I think pivot_months_loops() is slower than pivot_months_pandas() because the operations like grouping, aggregating and pivoting are more efficient using the 
+    function of panda compared to looping operations to collect data using pivot_months_loops().

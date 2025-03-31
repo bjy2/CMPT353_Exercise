@@ -1,0 +1,8 @@
+1. Based on the results, daily temperatures are not a good way to predict population density. Look at the plot it shows no specific correlation between them.
+   Most points are distributed between 10-30 degrees. However, even within this range, there is no obvious increase or decrease in population density caused by temperature increase or decrease.
+   Cities with significantly higher population density are irregularly distributed within the range.
+   In general, it is not a good way for prediction.
+
+2. The compressed file (.gz) on disk is much smaller than the uncompressed JSON file, which helps reduce disk input/output costs.
+   JSON file format contains a lot of repeated structures, such as {"station": "Vancouver"}... Using gzip compression can significantly reduce the file size, instead of keep them all in memory to load.
+   With a smaller file size, reading the file using streaming (line-by-line processing) instead of loading the entire file into memory results in faster execution and lower memory usage.

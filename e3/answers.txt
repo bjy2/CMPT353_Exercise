@@ -1,0 +1,2 @@
+1. Kalman smoothing produces better result than LOESS in peak points tracking, it's fluctuation is more frequent than LOESS. LOESS performs better in overall trend representation, the curve of LOESS is smoother.
+2. We might be able to predict the next latitude and longitude by using the latitude and longitude of current data row, note down the time gap between the current time stamp and next time stamp, times the speed moving, we have the distance moved; and using the course we know which direction we are moving to. We can predict the next latitude and longitude.

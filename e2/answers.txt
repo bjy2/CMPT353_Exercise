@@ -1,0 +1,4 @@
+1. The result is the expected value of rating based on time. 
+   The type of result is a float, The value is in between 10.5 to 14.5, within the time range from 2016-01 to 2019-05. The result increase about 0.1 per month.
+2. Because we used the line regression for the prediction data, it is a linear equation represents the best linear relationship between the timestamp and the rating, so we have a fit line.
+Timestamp values are the created_at values in numerical form, their values are directly realted, the points are paired correctly.
