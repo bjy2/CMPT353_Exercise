@@ -1,0 +1,12 @@
+1. If we use last p-value: 0.045 to conclude that people search more with the new design, we would be p-hacking. We are not very comfortable if we blindly trust the last p<0.05, could be false positive. And other p-value are all greater than 0.05
+2. We have 7 different algorithms here, so 7 choose 2, 7!/2!*(7-5)!=21 comparison tests. The probability have any false conclusion would be 1 - (1 - 0.05)^21 = 65.94%. By Bonferroni correction, we adjust b_alpha = 0.05/21 = 0.00238.
+3. sorting_function
+partition_sort    0.011721
+qs1               0.016731
+qs5               0.022800
+qs2               0.024318
+qs3               0.024431
+qs4               0.025089
+merge1            0.025090
+Indistinguishable: qs2 & qs3, qs4 & merge1
+In general: partition_sort > qs1 > qs5 > qs2 ≈ qs3 > qs4 ≈ merge1
