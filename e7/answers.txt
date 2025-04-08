@@ -1,0 +1,4 @@
+1. Residual are close-enough to being normal, mostly located in the centre with a little left skewed.
+   The p-value is very small, much less than 0.05, which indicates the ratings are increasing.
+2. No, the fluctuations of the kalman-smoothed line are much larger compared to the original plot, it's overfitted,
+means the new method is more sensitive to noises, affecting capture those true signals in the noise.

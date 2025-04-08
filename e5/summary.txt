@@ -1,0 +1,64 @@
+data-1.csv
+                x           y
+mean     8.717696   12.522874
+std     12.155517    6.639964
+min    -22.635878   -2.565088
+max     35.237055   27.384153
+
+r = 0.9503256954375483
+This data set shows very strong positive correlation between x and y, evenly distributed within the range.
+
+
+data-2.csv
+                x           y
+mean    -0.710787   -0.748987
+std     11.481584    6.257918
+min    -33.271113  -18.621804
+max     27.647000   14.147315
+
+r = 0.9551531665750373
+This data set also shows very strong positive correlation between x and y, but there are fewer distributions at the edge of the range, and most of them are in the middle of the range.
+
+
+data-3.csv
+                x           y
+mean     0.968907    8.508535
+std      2.235558    1.149301
+min     -2.449064    6.641734
+max      4.518885   10.551871
+
+r = 0.9819372646760659
+This data set shows strong positive correlation between x and y, with very densely distributed into four groups.
+
+
+data-4.csv
+                x           y
+mean    49.905086   18.553837
+std     28.508611   16.545896
+min      0.000000    0.000000
+max     87.376700   44.565040
+
+r = -0.08119306735490815
+There is no strong correlation between x and y. The scattered points form a rectangular border and the SFU letter in the lower right corner.
+
+
+data-5.csv
+                x           y
+mean    49.909994   18.555525
+std     28.500001   16.540796
+min      4.337892    0.055498
+max     91.052863   49.934197
+
+r = -0.0882359898305888
+The correlation coefficient between x and y is very weak. The data points form five vertical lines, some of them with breakpoints in between.
+
+
+data-6.csv
+                x           y
+mean     7.216155    7.602215
+std     11.921599   11.764382
+min    -24.333821  -22.956357
+max     35.402139   36.079874
+
+r = 0.9350685662094905
+The correlation betweeen x and y is very strong, forms a very straight line about x = y except two outliers.

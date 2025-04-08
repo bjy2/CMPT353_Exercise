@@ -1,0 +1,9 @@
+1. np.sqrt gets the closest to satisfying the assumptions.
+   np.log gives 0.000419, which is too low to assume equal variance; np.exp gives nan, meaning it failed as a transformation;
+   np.sqrt is 0.556 which is much higher than 0.05 and suggests better variance equality assumptions; and counts**2 is 7.39e-08, which is extremely low and does not improve variance equality.
+
+2. If I could reject the null hypothesis, the conclusion would be the number of Reddit comments number in r/canada have a significant difference between weekends and weekdays.
+
+3. Fix 2, the Central Limit Theorem is suitable for large sample size, and weekly means are more robust for normal distribution, making the t-test much more valid.
+
+4. On average, weekdays have more comments in /r/canada. Weekdays have average of 1821.37 and weekends have 1268.20.

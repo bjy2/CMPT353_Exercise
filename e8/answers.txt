@@ -1,0 +1,15 @@
+1. Bayesian classifier:    0.536 0.611
+kNN classifier:         0.726 0.732
+Rand forest classifier: 0.714 0.739
+
+KNN did the best overall according to the result. Given the default parameter, kNN did slightly better than Rand Forest and much better than bayesian.
+
+I think that the attribute of KNN does not assume a particular data distribution helps because colour features may not follow a Gaussian distribution.
+
+In LAB colour, distances make sense, meanwhile kNN is sensitive to its neighbours, so kNN is suitable for LAB, this make sense I used LAB colour for my task and kNN did the best;
+HSV has an axis “hue” and strong separability, Random Forest takes advantage of this through multiple decision trees, better handle complex boundaries between colors;
+RGB measures three primary colours red, green and blue, add together and produce different colour. Rand Forest works well on it.
+
+
+2. Yes, I believe the mistake is reasonable. Each time I execute gives a different model score, and many cities have quite similar weather data and can lead to mistake for prediction.
+To resolve the problem, we can add more data to the dataset like Sunlight hours per month, Wind speed & direction, Humidity levels and so on.
