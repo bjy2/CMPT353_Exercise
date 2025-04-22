@@ -1,0 +1,6 @@
+1. I used cache() after calculate the average score grouped by subreddit and filtered with positive scores. If not cache() ever used then we have to recalculate from the beginning of the raw data every time.
+
+2. With broadcast(): 49.38s user 2.38s system 474% cpu 10.901 total
+Without broadcast(): 50.33s user 2.62s system 499% cpu 10.599 total
+I used the time command as last week, the result above showed with broadcast() the time did improve a bit but not too much affect.
+
