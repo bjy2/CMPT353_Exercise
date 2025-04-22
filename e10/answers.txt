@@ -1,0 +1,9 @@
+1. (1) reddit-0: 8.48s user 0.87s system 195% cpu 4.772 total
+   (2) reddit-2 (No schema, No caching): 24.11s user 1.54s system 203% cpu 12.634 total
+   (3) reddit-2 (With schema, No caching): 13.95s user 0.97s system 170% cpu 8.731 total
+   (4) reddit-2 (With schema, With caching): 18.80s user 1.39s system 207% cpu 9.729 total
+
+2. Consider total as a measurement of average time, we use 4.772 for reddit-0, which is the time for set up, and other three takes about 8-13 seconds, which are mostly more than twice of reddit-0.
+   Since adding caching increased execution time slightly rather than reducing it, it suggests that reading the files is a major contributor to processing time rather than just computing averages.
+
+3. In line 31, after we filter the data that we can use for multiple times (english, no main page, no 'special:'), and before we process the data further differently with groupBy(), agg() and join().
